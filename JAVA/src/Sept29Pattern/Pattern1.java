@@ -6,6 +6,7 @@ Q1 . Write a program in Java to display the following pattern:
 3 3 3 
 4 4 4 4 
 5 5 5 5 5 
+kunwar vijay saw
  * */
 class Pattern1 {
 
