@@ -1,0 +1,76 @@
+package Sept15Constructor;
+/*Library_Book_Management
+You are building a system for a library. Each book has a title, an author, and a unique ISBN.
+Write a program to create a class Book with a constructor to initialize these values.
+Add a method display() to print the book details.
+
+Class Name:
+Book
+
+Instance Variables:
+- title (String)
+- author (String)
+- isbn (String)
+
+Constructor:
+- Book(String title, String author, String isbn) → initializes the instance variables.
+
+Method:
+- display() → prints the book details.
+
+Main Class:
+- LibraryMain → contains the main method.
+- In the main method, instantiate Book objects and invoke the display() method.
+
+Input Format:
+First word: Book title (String)
+Second word: Author name (String)
+Third word: ISBN (String)
+
+
+Output Format:
+Title: <title>, Author: <author>, ISBN: <isbn>
+
+Note:
+Use Scanner with next() method for reading string inputs.
+Sample Input
+JavaBasics
+Alice
+ISBN001
+Sample Output
+Title: JavaBasics, Author: Alice, ISBN: ISBN001*/
+
+import java.util.Scanner;
+
+class LibraryUser {
+
+	public static void main(String[]args){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter Title Name : ");
+        String title=sc.next();
+        System.out.println("Enter Author Name : ");
+        String author=sc.next();
+        System.out.println("Enter ISBN : ");
+        String isbn=sc.next();
+
+        Book b1= new Book(title,author,isbn);
+        System.out.println(b1.display());
+
+    }
+
+}
+class Book{
+    String title;
+    String author;
+    String isbn;
+
+    Book(String title, String author, String isbn){
+        this.title=title;
+        this.author=author;
+        this.isbn=isbn;
+    }
+    public String display(){
+        return "Title: "+title+", Author: "+author+", ISBN: "+isbn;
+
+    }
+}
