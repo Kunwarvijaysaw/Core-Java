@@ -1,8 +1,15 @@
 
 public class Add {
 	public static void main(String args[]) {
-		int a=10, b=20;
-		System.out.println(a*b);
+		int n=125;
+		int t=n;
+		int rev=0;
+		while(t!=0) {
+			int r=t%10;
+			rev=rev*10+r;
+			t=t/10;
+		}
+			System.out.println(rev);	
 	}
 
 

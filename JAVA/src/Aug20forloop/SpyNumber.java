@@ -1,7 +1,12 @@
 package Aug20forloop;
 
 import java.util.Scanner;
-
+/*
+ * ex-123
+ * sum=1+2+3=6
+ * multiple=1*2*3=6
+ * sum==multiple (this is spy no)
+ * */
 class SpyNumber {
 	public static void isSpyNumber(int number) {
 	int sum=0;	
