@@ -10,7 +10,7 @@ class ArrayMissingNumber {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		int arr[]= {1,2,4,5};
+		int arr[]= {1,2,3,5};
 		int k=1;
 		
 		for(int i=0;i<arr.length;i++) {

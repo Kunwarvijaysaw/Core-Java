@@ -32,7 +32,7 @@ class KthHighestElement {
 		int k=3;
 		int count=0;
 		boolean found=false;
-		for(int i=arr.length-1;i>=1;i--) {
+		for(int i=arr.length-1;i>0;i--) {
 			if(arr[i]>arr[i-1]) {
 				count++;
 			}
