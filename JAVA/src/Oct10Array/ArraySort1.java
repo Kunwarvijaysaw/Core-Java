@@ -16,6 +16,23 @@ class ArraySort1 {
 			arr[0]=temp;
 		}
 		System.out.println(Arrays.toString(arr));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 //		for(int i=pos+1;i<arr.length;i++)
 //		{
 //			int temp=arr[i];
