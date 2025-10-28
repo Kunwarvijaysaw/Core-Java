@@ -1,5 +1,118 @@
 package com.nit.abstract_Oct25;
+/*Develop a scenario based program by using abstract class and abstract method for displaying different kinds of Products like Digital Product and Physical Product as well as discount and tax applicable on thses products
 
+We need to develop one program on Hierarchical Inheritance, where Product is the super class and It has two sub classes DigitalProduct and PhysicalProduct.
+
+Validate all the user inputs in constructor and where it is required.
+
+Coding Requirements :
+---------------------
+Create one BLC class called Product.
+
+Attributes/Properties/Fields :[Access Modifier private for all the fields]
+-------------------------------------------------------------------
+name : String
+price : double 
+category : String
+
+Take a parameterized constructor to initialize all the fields.
+
+Methods :
+
+a) Method Name     : applyDiscount()
+Argument           : One argument of type double [double percentage]
+Return Type        : void
+Modifiers          : public and abstract 
+
+
+
+b) Method Name     : calculateTax()
+Argument           : No Argument
+Return Type        : double
+Modifiers          : public and abstract
+
+
+c) Setter and getter for price variable.
+
+d) Generate toString() method to print Object properties. 
+
+
+Create another class DigitalProduct which extends from Product class.
+
+Attributes/Properties/Fields :[Access Modifier private for all the fields]
+-------------------------------------------------------------------------
+licenseKey : String
+
+Take a parameterized constructor to initialize all the fields.
+
+Methods :
+a) Override applyDiscount(double percentage) method
+   In this method find out the discount based on the given percentage on the product price.
+   Update the new price based on the given discount.
+   Print both Discount and Updated Price.
+
+
+b)Override calculateTax() method 
+  In this method you should return 5% tax on the discounted price.
+
+c) Generate toString() to print all the fields
+
+
+Create another class PhysicalProduct which extends from Product class.
+
+Attributes/Properties/Fields :[Access Modifier private for all the fields]
+-------------------------------------------------------------------------
+shippingWeight : double
+
+Take a parameterized constructor to initialize all the fields.
+
+Methods :
+a) Override applyDiscount(double percentage) method
+   In this method find out the discount based on the given percentage on the product price.
+   Update the new price based on the given discount.
+   Print both Discount and Updated Price.
+
+
+b)Override calculateTax() method 
+  In this method you should return 8% tax on the discounted price.
+
+c)
+Method Name        : calculateShippingCost()
+Argument           : No argument
+Return Type        : double
+Access modifier    : public 
+ 
+In this method you need to calculate and return shipping cost of the Physical Product. The defined shipping cost is 5 RS per KG.
+
+d) Generate toString() to print all the fields
+
+Create an ELC class called ProductStore.
+
+Inside main method display the following details as a Menu.
+Select Product Type:
+1. Digital Product
+2. Physical Product
+
+Write Switch case with Scanner class to select Digital OR Physical Product
+
+Examples
+Example 1
+Input:
+Enter Digital Product Name :Java E Book
+Enter Product Price :1000
+Enter Product Category :Electronics
+Enter Product License Key :E_BOOK_001
+Enter the discount % on final bill
+10
+Output:
+Digital Product :
+Product Name: Java E Book
+Category: Electronics
+Price RS:1000.0
+License Key: E_BOOK_001
+Discount applied :100.0
+New Price :900.0
+Tax RS : 45.0*/
 import java.util.Scanner;
 
 public class OnlineShopping {
