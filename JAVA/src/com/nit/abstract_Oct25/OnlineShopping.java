@@ -145,7 +145,7 @@ public class OnlineShopping {
 			System.out.println(d1.toString());
 			d1.applyDiscount(10);
 			d1.calculateTax();
-		}
+			}
 		case 2: {
 			System.out.println("Enter Product Name");
 			String name = sc.next();
@@ -159,7 +159,7 @@ public class OnlineShopping {
 			System.out.println(p1.toString());
 			p1.applyDiscount(10);
 			p1.calculateTax();
-		}
+			}
 		}
 
 	}
@@ -183,7 +183,12 @@ abstract class Product {
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		if(name.equals(null)) {
+			System.out.println("Invalid name");
+		}else {
+			this.name = name;
+		}
+		
 	}
 
 	public double getPrice() {
@@ -269,7 +274,7 @@ class PhysicalProduct extends Product {
 	public void calculateTax() {
 		double tax = getPrice() * 0.08;
 		System.out.println("Tax RS : " + tax);
-
+		
 	}
 
 	@Override

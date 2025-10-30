@@ -8,7 +8,7 @@ package com.nit.abstract_Oct25;
 =create object in the main class and call the completed method .*/
 
 
-class VehicleTester {
+class PhoneUser {
 
 	public static void main(String[] args) {
 		ElectricCar e1 = new ElectricCar();
