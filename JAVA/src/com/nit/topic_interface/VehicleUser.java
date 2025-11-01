@@ -46,7 +46,8 @@ Hybrid Feature: Electric Assist Enabled"
 public class VehicleUser {
 
 	public static void main(String[] args) {
-//		Car5 car5=new Car5();
+//		Car5 
+//		car5=new Car5();
 //		car5.showType();
 //		Truck truck=new Truck();
 //		truck.showType();
