@@ -10,7 +10,7 @@ public class FindLength {
 		System.out.println("Enter your password");
 		String str=sc.nextLine();
 		Predicate  <String> p=(sentence)->str.length()>8;
-		System.out.println(str+" password length is >8 : "+p.test(str));
+		System.out.println("your password ["+str+"] length is grater then 8 : "+p.test(str));
 	}
 
 }
