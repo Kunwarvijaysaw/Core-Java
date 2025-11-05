@@ -1,5 +1,7 @@
 package com.nit.funtional_Interface;
 
+import java.util.function.Consumer;
+
 public class Employee {
 	String name;
 	double salary;
@@ -23,9 +25,13 @@ public class Employee {
 		Employee e2 = new Employee("RAJ", 40000, "HR");
 		Employee e3 = new Employee("KUMAR", 80000, "TESTER");
 		Employee emp[] = { e1, e2, e3 };
+		Consumer<Employee> c=(obj)->{
+										obj.salary+=5000;
+										System.out.println(obj);
+		};
+		
 		for (Employee e : emp) {
-			e.salary += 5000;
-			System.out.println(e);
+			c.accept(e);
 		}
 
 	}
