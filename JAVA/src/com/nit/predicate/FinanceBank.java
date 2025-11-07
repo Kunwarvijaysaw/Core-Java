@@ -97,34 +97,34 @@ public class FinanceBank {
 		int creditScore=Integer.parseInt(sc.nextLine());
 		cust[i]=new Customer(name,creditScore);
 	}
-//	Predicate<Customer> loneApprove=(c)->{if(c.getCreditScore()>700) {
-//											return true;
-//											}else {
-//												return false;
-//											}
-//										};
-//	for(Customer c1:cust) {
-//		if(loneApprove.test(c1)==true) {
-//			System.out.println("Lone Approved... "+c1.getName());
-//		}else {
-//			System.err.println("Lone Rejected... "+c1.getName());
-//		}
-//	}
-//
-//	}
-//
-//}
-
-	Predicate<Customer> loneApprove = (c) -> c.getCreditScore() > 700;
-
-	for (Customer c1 : cust) {
-		if (loneApprove.test(c1)) {
-			System.out.println("Lone Approved... " + c1.getName());
-		} else {
-			System.err.println("Lone Rejected... " + c1.getName());
+	Predicate<Customer> loneApprove=(c)->{if(c.getCreditScore()>700) {
+											return true;
+											}else {
+												return false;
+											}
+										};
+	for(Customer c1:cust) {
+		if(loneApprove.test(c1)==true) {
+			System.out.println("Lone Approved... "+c1.getName());
+		}else {
+			System.err.println("Lone Rejected... "+c1.getName());
 		}
+	}
+
 	}
 
 }
 
-}
+//	Predicate<Customer> loneApprove = (c) -> c.getCreditScore() > 700;
+//
+//	for (Customer c1 : cust) {
+//		if (loneApprove.test(c1)) {
+//			System.out.println("Lone Approved... " + c1.getName());
+//		} else {
+//			System.err.println("Lone Rejected... " + c1.getName());
+//		}
+//	}
+//
+//}
+//
+//}
