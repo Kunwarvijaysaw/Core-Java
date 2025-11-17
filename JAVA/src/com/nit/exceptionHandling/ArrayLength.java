@@ -9,6 +9,7 @@ public class ArrayLength {
 	System.out.println("Enter index");
 	int i=sc.nextInt();
 		int arr[]= {2,5,6,4};
+		//System.out.println("index "+i+" is : "+arr[i]);
 		try {
 			System.out.println("index "+i+" is : "+arr[i]);
 		}
