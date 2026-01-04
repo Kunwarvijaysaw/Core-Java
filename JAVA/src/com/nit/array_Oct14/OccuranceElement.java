@@ -20,36 +20,57 @@ import java.util.Scanner;
 public class OccuranceElement {
 	
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter size of Array ");
-		int size=sc.nextInt();
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("Enter size of Array ");
+//		int size=sc.nextInt();
+//		
+//		int arr[]=new int[size];
+//		System.out.println("Enter elements ");
+//		for(int i=0;i<size;i++) {
+//			arr[i]=sc.nextInt();
+//		}
+//		//find duplicate
+//		System.out.println("Frequency of Product Sales : ");
+//		for(int i=0;i<size;i++) {
+//			int count=1;
+//			int found=0;
+//			for(int j=0;j<size;j++) {
+//				if(arr[i]==arr[j] && i<j) {
+//					count++;
+//				}
+//				if(arr[i]==arr[j] && i>j) {
+//					found=1;
+//					break;
+//				}
+//			}
+//			if(count>=1&& found==0 ) {
+//				System.out.println(arr[i]+" Times "+count);
+//			}
+//			
+//		}
+//		
+
 		
-		int arr[]=new int[size];
-		System.out.println("Enter elements ");
-		for(int i=0;i<size;i++) {
-			arr[i]=sc.nextInt();
-		}
-		//find duplicate
-		System.out.println("Frequency of Product Sales : ");
-		for(int i=0;i<size;i++) {
+		
+		int[]arr= {10,20,30,40,10,20};
+		
+		for(int i=0;i<arr.length;i++)
+		{
 			int count=1;
-			int found=0;
-			for(int j=0;j<size;j++) {
-				if(arr[i]==arr[j] && i<j) {
+			if(arr[i]==-1)
+				continue;
+			for(int j=i+1;j<arr.length;j++)
+			{
+				if(arr[i]==arr[j])
+				{
 					count++;
+					arr[j]=-1;
 				}
-				if(arr[i]==arr[j] && i>j) {
-					found=1;
-					break;
-				}
-			}
-			if(count>=1&& found==0 ) {
-				System.out.println(arr[i]+" Times "+count);
+				
 			}
 			
+			System.out.println(arr[i]+" -> "+count);
 		}
-		
-
 	}
 
 }
