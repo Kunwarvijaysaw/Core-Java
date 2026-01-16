@@ -1,4 +1,4 @@
-package DSA_LinkedList;
+ package DSA_LinkedList;
 
 import java.util.Scanner;
 class Node{
