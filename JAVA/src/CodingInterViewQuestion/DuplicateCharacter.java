@@ -19,7 +19,7 @@ public class DuplicateCharacter {
 							break;
 						}
 					}
-					if (count > 1 && found == 0) {
+					if (count > 1 && found == 0) {//if u want to non duplicate count==1&&found==0
 						System.out.print(s.charAt(i) + " ");
 					}
 
