@@ -2,7 +2,7 @@ package Oct10Array;
 
 import java.util.Arrays;
 
-class ArraySort1 {
+class ArraysRightShift {
 
 	public static void main(String[] args) {
 		int arr[]= {1,2,3,4,5};//output{4,5,1,2,3}

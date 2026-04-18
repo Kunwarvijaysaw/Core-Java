@@ -12,7 +12,7 @@ steps = 2
 Output:
 [3, 4, 5, 1, 2]
 */
-class Arraysort {
+class ArraysLeftShift {
 
 	public static void main(String[] args) {
 		int arr[] = { 1, 2, 3, 4, 5 };// [3, 4, 5, 1, 2]
