@@ -23,7 +23,7 @@ public class Duplicate {
 			if(count>1 && found==0) {
 				System.out.println(arr[i]+"->"+count);
 			}
-			s
+			
 		}
 	}
 
