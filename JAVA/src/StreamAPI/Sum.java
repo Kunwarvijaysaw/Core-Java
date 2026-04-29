@@ -1,0 +1,15 @@
+package StreamAPI;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Sum {
+
+	public static void main(String[] args) {
+		List<Integer> list=Arrays.asList(1,2,1,3,2,3,5);
+		int sum=list.stream().reduce(0,(a,b)->a+b);
+		System.out.println("sum  : "+sum);
+
+	}
+
+}
