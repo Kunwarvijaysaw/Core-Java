@@ -9,18 +9,24 @@ public class Sum {
 
 	public static void main(String[] args) {
 		List<Integer> list=Arrays.asList(1,2,1,3,2,3,5);
+		
+		//Ascending Order
 //		int sum=list.stream().reduce(0,(a,b)->a+b);
 //		System.out.println("sum  : "+sum);
 		
 		
+		
+		//Descending Order
 //		list.stream()
 //		.sorted(Comparator.reverseOrder())
 //		.forEach(System.out::println);
 		
-		Map<Integer,Long> map=list.stream()
-						.collect(Collectors.groupingBy(n->n,Collectors.counting()));
 		
-		System.out.println(map);
+		//Occurence 
+//		Map<Integer,Long> map=list.stream()
+//						.collect(Collectors.groupingBy(n->n,Collectors.counting()));
+//		
+//		System.out.println(map);
 				
 
 	}
