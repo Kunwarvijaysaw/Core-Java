@@ -17,7 +17,7 @@ public class Pattern13 {
 				k++;
 			}
 			System.out.println();
-//			k++;
+
 		}
 
 	}
