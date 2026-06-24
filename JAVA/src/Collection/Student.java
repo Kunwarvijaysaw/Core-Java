@@ -40,6 +40,13 @@ public class Student {
 		System.out.println("\n=====by Name=====");
 		print(result);
 		
+		Comparator<Result> res2=(r1,r2)->Integer.compare(r1.marks,r2.marks);
+		Arrays.sort(result,res2);
+		System.out.println("\n=====by Marks=====");
+		print(result);
+		
+		
+		
 
 	}
 	public static void print(Result[] result) {
